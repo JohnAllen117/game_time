@@ -1,0 +1,15 @@
+<body>
+  <h5><a href="/"> Home</a></h5>
+  <h1><%= @team %></h1>
+  <ul>
+    <li>Team wins: <%= @wins %></li>
+    <li>Team losses: <%= @losses%></li>
+  </ul>
+
+  <h2> History </h2>
+  <ul>
+    <% @games.each do |team,v| %>
+      <li><%= team[:home_team]%>: <%= team[:home_score]%> vs <%= team[:away_team]%>: <%= team[:away_score]%></li>
+    <% end %>
+  </ul>
+</body>

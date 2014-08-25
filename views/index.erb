@@ -1,0 +1,12 @@
+<body>
+  <h1> NFL </h1>
+  <ul>
+    <% @teams.each do |team, value| %>
+      <li><a href="teams/<%= team%>"><%= team%></a></li>
+    <% end %>
+  </ul>
+  <h1> Standings </h1>
+  <ul>
+    <li><a href="leaderboards/">Leaderboards</a></li>
+  </ul>
+</body>

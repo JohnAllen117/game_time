@@ -1,0 +1,9 @@
+<body>
+  <h5><a href="/"> Home</a></h5>
+  <h1>Rankings</h1>
+  <ul>
+    <% @sorted.each do |team, value| %>
+    <li><p><a href="/teams/<%= team%>"><%= team %></a>  <%= value[:wins] %> wins</p></li>
+    <% end %>
+  </ul>
+</body>
